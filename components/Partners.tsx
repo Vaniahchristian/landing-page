@@ -14,7 +14,7 @@ export default function Partners() {
   const inView = useInView(ref, { once: true, margin: '-60px' })
 
   return (
-    <section id="partners" className="bg-[#0A0A0A] py-20 px-6 border-t border-[#F5F0E8]/[0.04]">
+    <section id="partners" className="py-20 px-6 border-t border-[#F5F0E8]/[0.04]" style={{ background: '#0D1610' }}>
       <div ref={ref} className="max-w-4xl mx-auto text-center">
         <motion.p
           initial={{ opacity: 0, y: 10 }}

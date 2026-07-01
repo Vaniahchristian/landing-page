@@ -87,7 +87,7 @@ export default function Categories() {
   const inView = useInView(ref, { once: true, margin: '-80px' })
 
   return (
-    <section id="categories" className="bg-[#0A0A0A] py-28 px-6">
+    <section id="categories" className="py-28 px-6" style={{ background: 'linear-gradient(180deg, #0A0A0A 0%, #0C1510 50%, #0A0A0A 100%)' }}>
       <div className="max-w-6xl mx-auto">
         <motion.div
           ref={ref}

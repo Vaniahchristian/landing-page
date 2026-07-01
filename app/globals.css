@@ -75,3 +75,19 @@ body {
   0%, 100% { transform: translateY(0); }
   50%       { transform: translateY(-6px); }
 }
+
+/* Hero entrance animations (CSS-based, avoids React 18 hydration issues) */
+@keyframes heroFadeUp {
+  from { opacity: 0; transform: translateY(28px); filter: blur(4px); }
+  to   { opacity: 1; transform: none; filter: none; }
+}
+
+@keyframes heroFadeUpSmall {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: none; }
+}
+
+@keyframes heroFadeUpTiny {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: none; }
+}
