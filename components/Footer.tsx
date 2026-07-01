@@ -49,7 +49,7 @@ export default function Footer() {
               <span className="w-1.5 h-1.5 rounded-full bg-[#1B3A2D]" />
             </div>
             <p className="text-sm text-[#F5F0E8]/38 leading-relaxed max-w-[240px]">
-              Intelligent Safari Technology. The digital infrastructure powering East Africa's
+              Intelligent Safari Technology. The digital infrastructure powering East Africa&apos;s
               tourism industry.
             </p>
           </div>

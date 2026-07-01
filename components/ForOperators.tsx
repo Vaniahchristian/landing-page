@@ -106,7 +106,7 @@ export default function ForOperators() {
               For Operators
             </p>
             <h2 className="text-3xl md:text-4xl font-bold text-[#1A1A1A] tracking-tight leading-tight mb-5">
-              Join Uganda's fastest growing safari marketplace.
+              Join Uganda&apos;s fastest growing safari marketplace.
             </h2>
             <p className="text-[#1A1A1A]/55 leading-[1.75] text-[15px] mb-8">
               15+ operators are already reaching travelers from London, Houston, and Dubai.
