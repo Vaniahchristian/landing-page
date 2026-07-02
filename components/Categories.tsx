@@ -69,8 +69,8 @@ export default function Categories() {
           className="mb-12"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-[#F5F0E8] tracking-tight">
-            Every Experience.
-            <span className="text-[#F5F0E8]/25"> One Platform.</span>
+            All Your Travel Needs.
+            <span className="text-[#F5F0E8]/25"> In one place.</span>
           </h2>
         </motion.div>
 
