@@ -50,6 +50,15 @@ export default function Nav() {
 
         <div className="flex items-center gap-3">
           <a
+            href="https://bookings.dirt-trails.com/vendor-login"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hidden md:inline-flex items-center px-5 py-2 rounded-full border border-[#8B6914] text-[#F5F0E8] text-sm font-medium hover:border-[#A07820] hover:text-[#F5F0E8] active:scale-[0.97] transition-all duration-150"
+          >
+            List your Services
+          </a>
+
+          <a
             href="https://bookings.dirt-trails.com"
             target="_blank"
             rel="noopener noreferrer"
@@ -92,6 +101,15 @@ export default function Nav() {
                   {label}
                 </a>
               ))}
+              <a
+                href="https://bookings.dirt-trails.com/vendor-login"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center px-4 py-2.5 rounded-full border border-[#8B6914] text-[#F5F0E8] text-sm font-medium hover:border-[#A07820] transition-all duration-150"
+                onClick={() => setMenuOpen(false)}
+              >
+                List your Services
+              </a>
               <a
                 href="https://bookings.dirt-trails.com"
                 target="_blank"

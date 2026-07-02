@@ -1,6 +1,7 @@
 const NAV_LINKS = [
   { label: 'How it Works', href: '#how-it-works' },
   { label: 'For Operators', href: '#for-operators' },
+  { label: 'List your Services', href: 'https://bookings.dirt-trails.com/vendor-login' },
   { label: 'Sustainability', href: '#sustainability' },
   { label: 'Contact', href: 'mailto:safaris.dirttrails@gmail.com' },
 ]
@@ -64,6 +65,8 @@ export default function Footer() {
                 <a
                   key={label}
                   href={href}
+                  target={href.startsWith('http') ? '_blank' : undefined}
+                  rel={href.startsWith('http') ? 'noopener noreferrer' : undefined}
                   className="text-sm text-[#F5F0E8]/45 hover:text-[#F5F0E8] transition-colors duration-200"
                 >
                   {label}
@@ -101,7 +104,7 @@ export default function Footer() {
         {/* Bottom */}
         <div className="flex flex-col sm:flex-row items-center justify-between gap-3 pt-8 border-t border-[#F5F0E8]/[0.055]">
           <p className="text-[12px] text-[#F5F0E8]/22">
-            © 2026 Dirt Trails. Built in Uganda. Intelligent Safari Technology.
+            © 2026 Dirt Trails. Intelligent Safari Technology.
           </p>
           <div className="flex items-center gap-1.5">
             <span className="w-1.5 h-1.5 rounded-full bg-[#4ade80] animate-pulse" />
