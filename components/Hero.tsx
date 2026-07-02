@@ -53,7 +53,7 @@ const ease = 'cubic-bezier(0.16, 1, 0.3, 1)'
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex flex-col justify-end overflow-hidden">
+    <section className="relative min-h-screen flex flex-col overflow-hidden">
       {/* Cinematic background */}
       <div className="absolute inset-0">
         <img
@@ -66,8 +66,11 @@ export default function Hero() {
         <div className="absolute inset-0 bg-gradient-to-r from-[#0A0A0A]/30 to-transparent" />
       </div>
 
+      {/* Sky spacer — caps the gap between nav and headline at 160px max */}
+      <div className="flex-1 max-h-[160px]" aria-hidden="true" />
+
       {/* Content */}
-      <div className="relative z-10 max-w-5xl mx-auto px-6 w-full pb-16 pt-36">
+      <div className="relative z-10 max-w-5xl mx-auto px-6 w-full pb-16 pt-2">
         {/* Headline */}
         <h1 className="text-[clamp(2.8rem,7.5vw,5.5rem)] font-bold tracking-[-0.025em] leading-[0.9] mb-5">
           <span className="flex flex-wrap gap-x-[0.22em]">

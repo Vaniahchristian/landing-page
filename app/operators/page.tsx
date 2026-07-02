@@ -15,7 +15,7 @@ const cssEase = 'cubic-bezier(0.16, 1, 0.3, 1)'
 
 function VendorHero() {
   return (
-    <section className="relative min-h-screen flex flex-col justify-end overflow-hidden">
+    <section className="relative min-h-screen flex flex-col overflow-hidden">
       <div className="absolute inset-0">
         <img
           src={VENDOR_IMG}
@@ -27,7 +27,10 @@ function VendorHero() {
         <div className="absolute inset-0 bg-gradient-to-r from-[#0A0A0A]/35 to-transparent" />
       </div>
 
-      <div className="relative z-10 max-w-5xl mx-auto px-6 w-full pb-20 pt-36">
+      {/* Sky spacer — caps the gap between nav and headline at 160px max */}
+      <div className="flex-1 max-h-[160px]" aria-hidden="true" />
+
+      <div className="relative z-10 max-w-5xl mx-auto px-6 w-full pb-20 pt-2">
         <h1
           className="text-[clamp(2.6rem,7vw,5rem)] font-bold tracking-[-0.025em] leading-[0.92] mb-6 text-[#F5F0E8]"
           style={{ animation: `heroFadeUp 0.7s ${cssEase} 0.1s both` }}
@@ -67,6 +70,7 @@ function VendorHero() {
     </section>
   )
 }
+
 
 // ── Benefits ──────────────────────────────────────────────────────────────────
 
