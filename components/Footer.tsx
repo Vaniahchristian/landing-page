@@ -3,7 +3,7 @@ const NAV_LINKS = [
   { label: 'For Businesses', href: '#for-operators' },
   { label: 'List your Services', href: 'https://bookings.dirt-trails.com/vendor-login' },
   { label: 'Sustainability', href: '#sustainability' },
-  { label: 'Contact', href: 'mailto:safaris.dirttrails@gmail.com' },
+  { label: 'Contact Us', href: 'mailto:safaris.dirttrails@gmail.com' },
 ]
 
 const SOCIALS = [
