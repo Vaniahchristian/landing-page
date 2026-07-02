@@ -5,131 +5,113 @@ import { motion, useInView } from 'framer-motion'
 
 const CATEGORIES = [
   {
-    title: 'Hotels & Stays',
-    description: 'Lodges, boutique hotels, tented camps',
-    icon: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-6 h-6">
-        <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
-        <polyline points="9 22 9 12 15 12 15 22" />
-      </svg>
-    ),
-  },
-  {
     title: 'Safari Tours',
     description: 'Gorilla trekking, game drives, birding',
-    icon: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-6 h-6">
-        <circle cx="12" cy="12" r="9" />
-        <path d="M12 6v6l4 2" strokeLinecap="round" />
-      </svg>
-    ),
+    image: 'https://images.unsplash.com/photo-1673624522244-8de0d50b8492?auto=format&fit=crop&w=800&q=80',
+    alt: 'Mountain gorilla in Bwindi Impenetrable Forest',
+    featured: true,
+    wide: false,
+  },
+  {
+    title: 'Hotels & Stays',
+    description: 'Lodges, boutique hotels, tented camps',
+    image: 'https://images.unsplash.com/photo-1741850821150-58b56e0e6156?auto=format&fit=crop&w=800&q=80',
+    alt: 'Luxury tented safari camp in natural landscape',
   },
   {
     title: 'Transport',
     description: 'Airport transfers, safari vehicles, boat rides',
-    icon: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-6 h-6">
-        <rect x="1" y="3" width="15" height="13" rx="2" />
-        <path d="M16 8h4l3 3v5h-7V8z" />
-        <circle cx="5.5" cy="18.5" r="2.5" />
-        <circle cx="18.5" cy="18.5" r="2.5" />
-      </svg>
-    ),
+    image: 'https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=800&q=80',
+    alt: 'Safari jeep on dusty track at sunset',
   },
   {
     title: 'Events',
     description: 'Cultural festivals, corporate retreats',
-    icon: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-6 h-6">
-        <path d="M12 2 15.09 8.26 22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-      </svg>
-    ),
+    image: 'https://images.unsplash.com/photo-1497271679421-ce9c3d6a31da?auto=format&fit=crop&w=800&q=80',
+    alt: 'Traditional East African cultural festival',
   },
   {
     title: 'Activities',
-    description: 'Hiking, white-water rafting, community visits',
-    icon: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-6 h-6">
-        <path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z" strokeLinecap="round" strokeLinejoin="round" />
-      </svg>
-    ),
+    description: 'Rafting, hiking, community visits',
+    image: 'https://images.unsplash.com/photo-1595637729313-783aed662e9b?auto=format&fit=crop&w=800&q=80',
+    alt: 'White water rafting on the Nile river',
   },
   {
     title: 'Restaurants',
     description: 'Local dining, sunset dinners, food tours',
-    icon: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-6 h-6">
-        <path d="M18 8h1a4 4 0 0 1 0 8h-1" />
-        <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z" />
-        <line x1="6" y1="1" x2="6" y2="4" strokeLinecap="round" />
-        <line x1="10" y1="1" x2="10" y2="4" strokeLinecap="round" />
-        <line x1="14" y1="1" x2="14" y2="4" strokeLinecap="round" />
-      </svg>
-    ),
+    image: 'https://images.unsplash.com/photo-1766547325390-44833aa5675b?auto=format&fit=crop&w=1200&q=80',
+    alt: 'Outdoor dining with panoramic view',
+    wide: true,
   },
 ]
 
-const cardVariants = {
-  hidden: { opacity: 0, y: 28 },
+const fadeUp = {
+  hidden: { opacity: 0, y: 24 },
   visible: (i: number) => ({
     opacity: 1,
     y: 0,
-    transition: {
-      delay: i * 0.07,
-      duration: 0.5,
-      ease: [0.16, 1, 0.3, 1],
-    },
+    transition: { delay: i * 0.07, duration: 0.5, ease: [0.16, 1, 0.3, 1] },
   }),
 }
 
 export default function Categories() {
   const ref = useRef<HTMLDivElement>(null)
-  const inView = useInView(ref, { once: true, margin: '-80px' })
+  const inView = useInView(ref, { once: true, margin: '-60px' })
 
   return (
-    <section id="categories" className="py-28 px-6" style={{ background: 'linear-gradient(180deg, #0A0A0A 0%, #0C1510 50%, #0A0A0A 100%)' }}>
+    <section id="categories" className="py-28 px-6 bg-[#0A0A0A]">
       <div className="max-w-6xl mx-auto">
         <motion.div
           ref={ref}
-          initial={{ opacity: 0, y: 18 }}
+          initial={{ opacity: 0, y: 16 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.5 }}
-          className="text-center mb-16"
+          transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
+          className="mb-12"
         >
-          <p className="text-[11px] text-[#8B6914] tracking-[0.16em] uppercase font-medium mb-3">
-            What We Offer
-          </p>
           <h2 className="text-4xl md:text-5xl font-bold text-[#F5F0E8] tracking-tight">
-            Every Experience,{' '}
-            <span className="text-[#F5F0E8]/40">One Platform</span>
+            Every Experience.
+            <span className="text-[#F5F0E8]/25"> One Platform.</span>
           </h2>
         </motion.div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4">
+        {/* Asymmetric image grid — Safari Tours spans 2 rows as the featured card */}
+        <div className="grid grid-cols-2 md:grid-cols-3 auto-rows-[200px] md:auto-rows-[230px] gap-3">
           {CATEGORIES.map((cat, i) => (
-            <motion.div
+            <motion.a
               key={cat.title}
+              href="https://bookings.dirt-trails.com"
+              target="_blank"
+              rel="noopener noreferrer"
               custom={i}
-              variants={cardVariants}
+              variants={fadeUp}
               initial="hidden"
               animate={inView ? 'visible' : 'hidden'}
-              className="group relative p-5 md:p-7 rounded-2xl border border-[#F5F0E8]/[0.055] bg-[#F5F0E8]/[0.02] hover:border-[#8B6914]/45 hover:bg-[#8B6914]/[0.04] transition-all duration-300 cursor-default overflow-hidden"
+              className={`group relative overflow-hidden rounded-2xl ${
+                cat.featured ? 'row-span-2' : ''
+              } ${'wide' in cat && cat.wide ? 'col-span-2 md:col-span-3' : ''}`}
             >
-              {/* Glow */}
-              <div
-                className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
-                style={{ boxShadow: '0 0 40px rgba(139,105,20,0.06) inset' }}
+              <img
+                src={cat.image}
+                alt={cat.alt}
+                loading="lazy"
+                className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-[1.06]"
               />
-              <div className="text-[#F5F0E8]/35 group-hover:text-[#8B6914] transition-colors duration-300 mb-4">
-                {cat.icon}
+              {/* Base overlay */}
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A]/85 via-[#0A0A0A]/20 to-transparent" />
+              {/* Gold border glow */}
+              <div className="absolute inset-0 rounded-2xl ring-inset ring-0 group-hover:ring-[1.5px] group-hover:ring-[#8B6914]/55 transition-all duration-300 pointer-events-none" />
+              {/* Text */}
+              <div className="absolute bottom-0 left-0 right-0 p-4 md:p-5">
+                <h3
+                  className={`font-semibold text-[#F5F0E8] leading-tight mb-0.5 ${
+                    cat.featured ? 'text-xl md:text-2xl' : 'text-[14px] md:text-[15px]'
+                  }`}
+                >
+                  {cat.title}
+                </h3>
+                <p className="text-[12px] text-[#F5F0E8]/50 leading-snug">{cat.description}</p>
               </div>
-              <h3 className="text-[14px] md:text-[15px] font-semibold text-[#F5F0E8] mb-1.5 leading-snug">
-                {cat.title}
-              </h3>
-              <p className="text-[12px] text-[#F5F0E8]/38 leading-relaxed">
-                {cat.description}
-              </p>
-            </motion.div>
+            </motion.a>
           ))}
         </div>
       </div>
