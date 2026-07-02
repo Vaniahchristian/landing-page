@@ -66,13 +66,13 @@ export default function Hero() {
         <div className="absolute inset-0 bg-gradient-to-r from-[#0A0A0A]/30 to-transparent" />
       </div>
 
-      {/* Sky spacer — caps the gap between nav and headline at 160px max */}
-      <div className="flex-1 max-h-[160px]" aria-hidden="true" />
+      {/* Sky spacer — caps the gap between nav and headline at 200px max */}
+      <div className="flex-1 max-h-[200px]" aria-hidden="true" />
 
       {/* Content */}
-      <div className="relative z-10 max-w-5xl mx-auto px-6 w-full pb-16 pt-2">
+      <div className="relative z-10 max-w-5xl mx-auto px-6 w-full pb-6">
         {/* Headline */}
-        <h1 className="text-[clamp(2.8rem,7.5vw,5.5rem)] font-bold tracking-[-0.025em] leading-[0.9] mb-5">
+        <h1 className="text-[clamp(2.8rem,7.5vw,5.5rem)] font-bold tracking-[-0.025em] leading-[0.9] mb-4">
           <span className="flex flex-wrap gap-x-[0.22em]">
             {HEADLINE.map((word, i) => (
               <span
@@ -87,7 +87,7 @@ export default function Hero() {
         </h1>
 
         <p
-          className="text-[#F5F0E8]/58 text-lg mb-8 max-w-sm leading-relaxed"
+          className="text-[#F5F0E8]/58 text-lg mb-5 max-w-sm leading-relaxed"
           style={{ animation: `heroFadeUpSmall 0.55s ${ease} 0.6s both` }}
         >
           Verified operators. Real-time booking. Mobile money.
@@ -95,7 +95,7 @@ export default function Hero() {
 
         {/* Search bar */}
         <div
-          className="bg-[#0A0A0A]/80 backdrop-blur-xl rounded-2xl p-1.5 flex flex-col sm:flex-row gap-1 mb-14 max-w-2xl border border-white/[0.07] shadow-[0_20px_60px_rgba(0,0,0,0.45)]"
+          className="bg-[#0A0A0A]/80 backdrop-blur-xl rounded-2xl p-1.5 flex flex-col sm:flex-row gap-1 mb-4 max-w-2xl border border-white/[0.07] shadow-[0_20px_60px_rgba(0,0,0,0.45)]"
           style={{ animation: `heroFadeUpSmall 0.5s ${ease} 0.75s both` }}
         >
           <select
@@ -141,7 +141,7 @@ export default function Hero() {
 
         {/* Stats bar */}
         <div
-          className="flex flex-wrap gap-8 md:gap-12 pt-6 border-t border-white/[0.06]"
+          className="flex flex-wrap gap-8 md:gap-12 pt-4 border-t border-white/[0.06]"
           style={{ animation: `heroFadeUpTiny 0.45s ${ease} 1s both` }}
         >
           {STATS.map((s) => (

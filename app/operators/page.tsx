@@ -27,12 +27,12 @@ function VendorHero() {
         <div className="absolute inset-0 bg-gradient-to-r from-[#0A0A0A]/35 to-transparent" />
       </div>
 
-      {/* Sky spacer — caps the gap between nav and headline at 160px max */}
-      <div className="flex-1 max-h-[160px]" aria-hidden="true" />
+      {/* Sky spacer — caps the gap between nav and headline at 200px max */}
+      <div className="flex-1 max-h-[200px]" aria-hidden="true" />
 
-      <div className="relative z-10 max-w-5xl mx-auto px-6 w-full pb-20 pt-2">
+      <div className="relative z-10 max-w-5xl mx-auto px-6 w-full pb-10">
         <h1
-          className="text-[clamp(2.6rem,7vw,5rem)] font-bold tracking-[-0.025em] leading-[0.92] mb-6 text-[#F5F0E8]"
+          className="text-[clamp(2.6rem,7vw,5rem)] font-bold tracking-[-0.025em] leading-[0.92] mb-5 text-[#F5F0E8]"
           style={{ animation: `heroFadeUp 0.7s ${cssEase} 0.1s both` }}
         >
           Reach Travelers
@@ -41,7 +41,7 @@ function VendorHero() {
         </h1>
 
         <p
-          className="text-[#F5F0E8]/58 text-lg mb-10 max-w-md leading-relaxed"
+          className="text-[#F5F0E8]/58 text-lg mb-6 max-w-md leading-relaxed"
           style={{ animation: `heroFadeUpSmall 0.55s ${cssEase} 0.4s both` }}
         >
           List your business. Get paid via mobile money. Zero setup fee.
