@@ -77,7 +77,7 @@ export default function Sustainability() {
           transition={{ delay: 0.18, duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
           className="text-4xl md:text-5xl font-bold text-[#F5F0E8] tracking-tight mb-4"
         >
-          Every booking plants a tree.
+          Every booking plants a tree currently.
         </motion.h2>
 
         <motion.p
