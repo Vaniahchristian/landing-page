@@ -93,7 +93,7 @@ export default function ForOperators() {
   const inView = useInView(ref, { once: true, margin: '-80px' })
 
   return (
-    <section id="for-operators" className="bg-[#FAFAF8] py-28 px-6">
+    <section id="for-businesses" className="bg-[#FAFAF8] py-28 px-6">
       <div ref={ref} className="max-w-6xl mx-auto">
         <div className="grid md:grid-cols-2 gap-16 md:gap-20 items-center">
           {/* Copy */}
@@ -103,13 +103,13 @@ export default function ForOperators() {
             transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
           >
             <p className="text-[11px] text-[#8B6914] tracking-[0.16em] uppercase font-medium mb-5">
-              For Operators
+              For Businesses
             </p>
             <h2 className="text-3xl md:text-4xl font-bold text-[#1A1A1A] tracking-tight leading-tight mb-5">
               Join Uganda&apos;s fastest growing safari marketplace.
             </h2>
             <p className="text-[#1A1A1A]/55 leading-[1.75] text-[15px] mb-8">
-              15+ operators are already reaching travelers from London, Houston, and Dubai.
+              15+ Businesses are already reaching travelers from London, Houston, and Dubai.
               Get paid via mobile money. No setup fee. Go live in 48 hours.
             </p>
             <a

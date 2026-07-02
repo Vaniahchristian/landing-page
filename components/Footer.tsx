@@ -1,6 +1,6 @@
 const NAV_LINKS = [
   { label: 'How it Works', href: '#how-it-works' },
-  { label: 'For Operators', href: '#for-operators' },
+  { label: 'For Businesses', href: '#for-operators' },
   { label: 'List your Services', href: 'https://bookings.dirt-trails.com/vendor-login' },
   { label: 'Sustainability', href: '#sustainability' },
   { label: 'Contact', href: 'mailto:safaris.dirttrails@gmail.com' },

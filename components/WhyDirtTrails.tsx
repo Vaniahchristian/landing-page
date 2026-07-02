@@ -5,11 +5,11 @@ import { motion, useInView } from 'framer-motion'
 
 const FEATURES = [
   {
-    title: 'Mobile Money First',
-    description: 'MTN and Airtel built in natively. Not bolted on.',
+    title: 'Secure, Boarderless',
+    description: 'Anytime, anywhere with deeper customisation.',
   },
   {
-    title: 'Verified Operators',
+    title: 'Verified Businesses',
     description: 'Every listing reviewed and approved before going live.',
   },
   {
@@ -42,9 +42,9 @@ export default function WhyDirtTrails() {
               <span className="text-[#1B3A2D]">Not adapted</span> for it.
             </h2>
             <p className="text-[#1A1A1A]/70 leading-[1.8] text-[15px] max-w-sm">
-              Every other platform was built for Europe or the US, then patched to work here.
-              Dirt Trails is built ground-up for East Africa — the infrastructure, the payment
-              rails, the connectivity constraints that matter on the ground.
+              Dirt Trails is different. It was built from the ground up for East Africa, designed around the realities of the region—from local payment systems and business workflows to varying connectivity in remote tourism destinations.
+
+              The result is technology that works where tourism actually happens.
             </p>
           </motion.div>
 

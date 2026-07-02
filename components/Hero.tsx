@@ -7,7 +7,7 @@ const HERO_IMG =
   'https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?auto=format&fit=crop&w=1920&q=85'
 
 const STATS = [
-  { value: 15, suffix: '+', label: 'Operators' },
+  { value: 15, suffix: '+', label: 'Businesses' },
   { value: 30, suffix: '+', label: 'Services' },
   { value: 3, suffix: '+', label: 'Partners' },
   { value: 150, suffix: 'kg+', label: 'Carbon Offset' },
