@@ -14,11 +14,11 @@ const FEATURES = [
   },
   {
     title: 'Instant Settlement',
-    description: 'Vendors paid automatically. No chasing. No delays.',
+    description: 'Businesses paid automatically. No chasing. No delays.',
   },
   {
     title: 'Offline Ready',
-    description: 'Vendor dashboard works in low-connectivity safari areas.',
+    description: 'Business dashboard works in low-connectivity safari areas.',
   },
 ]
 
