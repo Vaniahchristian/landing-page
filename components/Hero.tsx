@@ -47,7 +47,7 @@ function StatCounter({
   )
 }
 
-const HEADLINE = ['Smart Tools,', 'Verified Experiences,', 'Sustainable Tourism...']
+const HEADLINE = ['One Stop For all Your Travel Needs..']
 const CATEGORIES = ['Hotels & Stays', 'Safari Tours', 'Transport', 'Events', 'Activities', 'Restaurants']
 const ease = 'cubic-bezier(0.16, 1, 0.3, 1)'
 

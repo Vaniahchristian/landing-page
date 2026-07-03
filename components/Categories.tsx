@@ -75,8 +75,8 @@ export default function Categories() {
           className="mb-12"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-[#F5F0E8] tracking-tight">
-            All Your Travel Needs.
-            <span className="text-[#F5F0E8]/25"> In one place.</span>
+            Thinking Travel,
+            <span className="text-[#F5F0E8]/25"> Book all services with Dirt Trails.</span>
           </h2>
         </motion.div>
 
