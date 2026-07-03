@@ -47,7 +47,7 @@ function StatCounter({
   )
 }
 
-const HEADLINE = ['East', "Africa's", 'Most', 'Extraordinary', 'Experiences']
+const HEADLINE = ['Smart Tools,', 'Verified Experiences,', 'Sustainable Tourism...']
 const CATEGORIES = ['Hotels & Stays', 'Safari Tours', 'Transport', 'Events', 'Activities', 'Restaurants']
 const ease = 'cubic-bezier(0.16, 1, 0.3, 1)'
 
@@ -90,7 +90,7 @@ export default function Hero() {
           className="text-[#F5F0E8]/58 text-lg mb-5 max-w-sm leading-relaxed"
           style={{ animation: `heroFadeUpSmall 0.55s ${ease} 0.6s both` }}
         >
-          Verified operators. Real-time booking. Mobile money.
+          Verified operators. Real-time booking.
         </p>
 
         {/* Search bar */}

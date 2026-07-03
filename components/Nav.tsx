@@ -30,10 +30,10 @@ export default function Nav() {
     >
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         <a href="/" className="flex items-center gap-2 group flex-shrink-0">
-          <span className="text-[15px] font-semibold tracking-tight text-[#F5F0E8]">
+          <span className="text-[16px] md:text-[17px] font-semibold tracking-tight text-[#F5F0E8]">
             Dirt Trails
           </span>
-          <span className="w-1.5 h-1.5 rounded-full bg-[#8B6914] opacity-80 group-hover:opacity-100 transition-opacity duration-200" />
+          <span className="w-1.5 h-1.5 rounded-full bg-[#8B6914] opacity-80 group-hover:opacity-500 transition-opacity duration-200" />
         </a>
 
         <div className="hidden md:flex items-center gap-8">
@@ -41,7 +41,7 @@ export default function Nav() {
             <a
               key={label}
               href={href}
-              className="text-sm text-[#F5F0E8]/50 hover:text-[#F5F0E8] transition-colors duration-200"
+              className="text-sm font-semibold text-white opacity-100 hover:text-[#F5F0E8] transition-colors duration-100"
             >
               {label}
             </a>
@@ -95,7 +95,7 @@ export default function Nav() {
                 <a
                   key={label}
                   href={href}
-                  className="text-sm text-[#F5F0E8]/60 hover:text-[#F5F0E8] transition-colors"
+                  className="text-sm font-semibold text-white opacity-100 hover:text-[#F5F0E8] transition-colors"
                   onClick={() => setMenuOpen(false)}
                 >
                   {label}
